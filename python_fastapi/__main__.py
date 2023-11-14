@@ -24,7 +24,7 @@ is_word = enchant.Dict("en_US")
 app = FastAPI()
 
 
-@app.get("/")
+@app.get("/ping")
 async def ping():
     return {"ping": "pong"}
 
